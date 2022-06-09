@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/PortfolioValueFragment">
+
+    <fragment
+        android:id="@+id/PriceListFragment"
+        android:name="com.omurzakov.cryptoportfolio.fragments.PriceListFragment"
+        android:label="@string/fragment_label_crypto"
+        tools:layout="@layout/fragment_price_list">
+
+        <action
+            android:id="@+id/action_PriceListFragment_to_AddCryptoFragment"
+            app:destination="@id/AddCryptoFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/PortfolioValueFragment"
+        android:name="com.omurzakov.cryptoportfolio.fragments.PortfolioValueFragment"
+        android:label="@string/fragment_label_portfolio_value"
+        tools:layout="@layout/fragment_portfolio_value">
+
+        <action
+            android:id="@+id/action_PortfolioValueFragment_to_RemoveCryptoFragment"
+            app:destination="@id/RemoveCryptoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AnalyticsFragment"
+        android:name="com.omurzakov.cryptoportfolio.fragments.AnalyticsFragment"
+        android:label="@string/fragment_analytics"
+        tools:layout="@layout/fragment_analytics" />
+
+    <fragment
+        android:id="@+id/HistoryListFragment"
+        android:name="com.omurzakov.cryptoportfolio.fragments.HistoryListFragment"
+        android:label="@string/fragment_label_history"
+        tools:layout="@layout/fragment_history_list" />
+
+    <fragment
+        android:id="@+id/AddCryptoFragment"
+        android:name="com.omurzakov.cryptoportfolio.fragments.AddCryptoFragment"
+        android:label="@string/fragment_label_add_crypto"
+        tools:layout="@layout/fragment_add_crypto">
+
+        <argument
+            android:name="cryptoId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_AddCryptoFragment_to_PriceListFragment"
+            app:destination="@id/PriceListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RemoveCryptoFragment"
+        android:name="com.omurzakov.cryptoportfolio.fragments.RemoveCryptoFragment"
+        android:label="@string/fragment_label_remove_crypto"
+        tools:layout="@layout/fragment_remove_crypto">
+
+        <argument
+            android:name="cryptoId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_RemoveCryptoFragment_to_PortfolioValueFragment"
+            app:destination="@id/PortfolioValueFragment" />
+    </fragment>
+
+</navigation>

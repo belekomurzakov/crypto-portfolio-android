@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CryptoPortfolio</string>
+    <string name="action_settings">Орнотуулар</string>
+    <string name="next">Кийинки</string>
+    <string name="previous">Мурунку</string>
+    <string name="add_assets">Активдерди кошуу</string>
+    <string name="analytics">Аналитика</string>
+    <string name="prices">Баалар</string>
+    <string name="portfolio">Портфолио</string>
+    <string name="history">Тизме</string>
+    <string name="assets">Активдер</string>
+    <string name="remove_assets">Активдерди алуу</string>
+    <string name="fragment_label_crypto">Крипто пул</string>
+    <string name="fragment_label_portfolio_value">Порфолионун баасы</string>
+    <string name="fragment_analytics">Аналитика</string>
+    <string name="fragment_label_add_crypto">Криптону кошуу</string>
+    <string name="fragment_label_remove_crypto">Криптону алуу</string>
+    <string name="fragment_label_history">Тизме</string>
+</resources>

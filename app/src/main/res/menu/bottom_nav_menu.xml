@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/AnalyticsFragment"
+        android:icon="@drawable/ic_analytics"
+        android:title="@string/analytics" />
+
+    <item
+        android:id="@+id/PriceListFragment"
+        android:icon="@drawable/ic_price"
+        android:title="@string/prices" />
+
+    <item
+        android:id="@+id/PortfolioValueFragment"
+        android:icon="@drawable/ic_case"
+        android:title="@string/portfolio" />
+
+    <item
+        android:id="@+id/HistoryListFragment"
+        android:icon="@drawable/ic_history"
+        android:title="@string/history" />
+
+</menu>
